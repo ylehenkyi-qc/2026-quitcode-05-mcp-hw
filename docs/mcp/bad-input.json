@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Input validation error: Invalid arguments for tool leaddesk_set_lead_status: leadId: Invalid string: must match pattern /^lead_\\d{4}$/, reason: Too small: expected string to have >=3 characters"
+    }
+  ],
+  "isError": true
+}
