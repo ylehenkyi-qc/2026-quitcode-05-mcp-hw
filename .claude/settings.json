@@ -1,0 +1,25 @@
+{
+    "permissions": {
+      "deny": [
+        "mcp__vercel__buy_pro",
+        "mcp__vercel__buy_credits",
+        "mcp__vercel__buy_addon",
+        "mcp__vercel__buy_domain",
+        "mcp__vercel__deploy_to_vercel",
+        "mcp__vercel__get_access_to_vercel_url",
+        "mcp__vercel__import-claude-design-from-url",
+        "mcp__vercel__reply_to_toolbar_thread",
+        "mcp__vercel__edit_toolbar_message",
+        "mcp__vercel__change_toolbar_thread_resolve_status",
+        "mcp__vercel__add_toolbar_reaction"
+      ],
+      "allow": [
+        "mcp__supabase__search_docs",
+        "mcp__supabase__list_tables",
+        "mcp__supabase__list_migrations",
+        "mcp__vercel__list_deployments",
+        "mcp__vercel__get_deployment",
+        "mcp__vercel__get_deployment_build_logs"
+      ]
+    }
+  }

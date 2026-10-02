@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@playwright/mcp@0.0.82",
+        "--isolated",
+        "--no-webmcp",
+        "--allowed-origins",
+        "http://localhost:3000"
+      ],
+      "env": {}
+    },
+    "supabase": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp?project_ref=ucxrdxgxktilpjjeanrc&features=database,development,docs"
+    }
+  }
+}
