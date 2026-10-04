@@ -11,7 +11,12 @@
         "mcp__vercel__reply_to_toolbar_thread",
         "mcp__vercel__edit_toolbar_message",
         "mcp__vercel__change_toolbar_thread_resolve_status",
-        "mcp__vercel__add_toolbar_reaction"
+        "mcp__vercel__add_toolbar_reaction",
+        "mcp__playwright__browser_run_code_unsafe",
+        "mcp__playwright__webmcp_*",
+        "mcp__playwright__browser_file_upload",
+        "mcp__playwright__browser_drop",
+        "mcp__playwright__browser_evaluate"
       ],
       "allow": [
         "mcp__supabase__search_docs",
@@ -19,7 +24,17 @@
         "mcp__supabase__list_migrations",
         "mcp__vercel__list_deployments",
         "mcp__vercel__get_deployment",
-        "mcp__vercel__get_deployment_build_logs"
+        "mcp__vercel__get_deployment_build_logs",
+        "mcp__playwright__browser_navigate",
+        "mcp__playwright__browser_snapshot",
+        "mcp__playwright__browser_find",
+        "mcp__playwright__browser_click",
+        "mcp__playwright__browser_type",
+        "mcp__playwright__browser_fill_form",
+        "mcp__playwright__browser_take_screenshot",
+        "mcp__playwright__browser_console_messages",
+        "mcp__playwright__browser_network_requests",
+        "mcp__playwright__browser_wait_for"
       ]
     }
   }

@@ -1,0 +1,52 @@
+# Лог білду Vercel — deployment dpl_B9t2Mqdse4buTzgJEc9oYzokYaZy (READY, production)
+#
+# Лог взято з дашборда вручну. Через Vercel MCP отримати його не вдалося:
+# list_deployments і get_deployment спрацювали, а list_deployment_events повертає 403
+# "You must re-authenticate to this scope" — з teamId, зі slug і без них.
+# Скоуп в акаунті один, повторна автентифікація й перестворення сервера результату не змінили.
+# Назви скоупу й власника репозиторію замінено на <scope> і <owner>.
+
+19:20:13.397 Running build in Washington, D.C., USA (East) – iad1
+19:20:13.398 Build machine configuration: 2 cores, 8 GB
+19:20:13.520 Cloning github.com/<owner>/2026-quitcode-05-mcp-hw (Branch: main, Commit: eba2328)
+19:20:13.521 Previous build caches not available.
+19:20:14.239 Cloning completed: 719.000ms
+19:20:14.915 Running "vercel build"
+19:20:15.002 Vercel CLI 62.1.0
+19:20:15.316 Installing dependencies...
+19:20:28.437 added 493 packages in 13s
+19:20:28.501 Detected Next.js version: 16.3.5
+19:20:28.510 Running "npm run build"
+19:20:29.336 ▲ Next.js 16.3.5 (Turbopack)
+19:20:29.516   Applying modifyConfig from Vercel
+19:20:29.519 ✓ Running next.config.ts took 182ms
+19:20:29.594   Creating an optimized production build ...
+19:20:41.298 ✓ Compiled successfully in 10.9s
+19:20:41.309   Running TypeScript ...
+19:20:46.127   Finished TypeScript in 4.8s ...
+19:20:46.130   Collecting page data using 1 worker ...
+19:20:46.854   Generating static pages using 1 worker (0/8) ...
+19:20:47.005 db:listUsers: 1
+19:20:47.164 ✓ Generating static pages using 1 worker (8/8) in 309ms
+19:20:47.171   Finalizing page optimization ...
+19:20:47.227   Running onBuildComplete from Vercel
+19:20:47.365 Route (app)
+19:20:47.365 ┌ ○ /
+19:20:47.365 ├ ○ /_not-found
+19:20:47.365 ├ ƒ /api/leads
+19:20:47.365 ├ ƒ /api/n8n/[event]
+19:20:47.366 ├ ƒ /dashboard
+19:20:47.366 ├ ƒ /dashboard/leads/[id]
+19:20:47.366 ├ ○ /login
+19:20:47.366 ├ ƒ /quotes/[id]
+19:20:47.366 └ ○ /quotes/new
+19:20:47.366 ƒ Proxy (Middleware)
+19:20:47.366 ○  (Static)   prerendered as static content
+19:20:47.366 ƒ  (Dynamic)  server-rendered on demand
+19:20:47.865 Build Completed in /vercel/output [33s]
+19:20:47.894 Deploying outputs...
+19:20:55.757 Deployment completed
+19:20:55.760 Creating build cache...
+19:21:08.260 Created build cache: 12s
+19:21:08.260 Uploading build cache [165.38 MB]
+19:21:10.706 Build cache uploaded: 2.446s

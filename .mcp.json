@@ -1,9 +1,5 @@
 {
   "mcpServers": {
-    "vercel": {
-      "type": "http",
-      "url": "https://mcp.vercel.com"
-    },
     "playwright": {
       "type": "stdio",
       "command": "cmd",
@@ -22,6 +18,10 @@
     "supabase": {
       "type": "http",
       "url": "https://mcp.supabase.com/mcp?project_ref=ucxrdxgxktilpjjeanrc&features=database,development,docs"
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
     }
   }
 }

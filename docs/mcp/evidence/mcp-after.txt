@@ -1,0 +1,35 @@
+# Знімок "після" — інструменти playwright, доступні агенту ПІСЛЯ додавання deny-правил.
+# Джерело: відповідь агента в новій сесії, де у /mcp увімкнено лише playwright.
+# Запит той самий, що для "до".
+# Усього: 21 (було 25).
+#
+# Зникли з контексту агента:
+#   mcp__playwright__browser_run_code_unsafe
+#   mcp__playwright__browser_file_upload
+#   mcp__playwright__browser_drop
+#   mcp__playwright__browser_evaluate
+# П'яте правило deny — mcp__playwright__webmcp_* — на знімку не видно,
+# бо з --no-webmcp сторінка своїх інструментів не реєструє; воно спрацює,
+# якщо прапорець колись приберуть.
+
+mcp__playwright__browser_click
+mcp__playwright__browser_close
+mcp__playwright__browser_console_messages
+mcp__playwright__browser_drag
+mcp__playwright__browser_emulate_media
+mcp__playwright__browser_fill_form
+mcp__playwright__browser_find
+mcp__playwright__browser_handle_dialog
+mcp__playwright__browser_hover
+mcp__playwright__browser_navigate
+mcp__playwright__browser_navigate_back
+mcp__playwright__browser_network_request
+mcp__playwright__browser_network_requests
+mcp__playwright__browser_press_key
+mcp__playwright__browser_resize
+mcp__playwright__browser_select_option
+mcp__playwright__browser_snapshot
+mcp__playwright__browser_tabs
+mcp__playwright__browser_take_screenshot
+mcp__playwright__browser_type
+mcp__playwright__browser_wait_for
