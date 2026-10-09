@@ -15,19 +15,19 @@
 
 ## Запуск
 
-bash
+```bash
 npm install
 node src/server.mjs
+```
 
-
-Сервер читає `fixtures/leads.json` один раз і тримає зміни **в пам'ятi процесу**; файл фікстури
+Сервер читає `fixtures/leads.json` один раз і тримає зміни **в пам'яті процесу**; файл фікстури
 не переписується ніколи. Інший шлях до фікстури — змінна `LEADDESK_FIXTURE`.
 
 ## Перевірка Inspector'ом
 
 З кореня репозиторію, Git Bash:
 
-bash
+```bash
 npx -y @modelcontextprotocol/inspector@2.8.0 --cli node mcp/leaddesk-server/src/server.mjs --method tools/list
 
 npx -y @modelcontextprotocol/inspector@2.8.0 --cli node mcp/leaddesk-server/src/server.mjs \
@@ -35,7 +35,7 @@ npx -y @modelcontextprotocol/inspector@2.8.0 --cli node mcp/leaddesk-server/src/
 
 npx -y @modelcontextprotocol/inspector@2.8.0 --cli node mcp/leaddesk-server/src/server.mjs \
   --method resources/read --uri leaddesk://reference/statuses
-
+```
 
 Кожен виклик піднімає сервер заново, тож стан щоразу чистий.
 Артефакти перевірки — у `docs/mcp/`.
@@ -44,8 +44,8 @@ npx -y @modelcontextprotocol/inspector@2.8.0 --cli node mcp/leaddesk-server/src/
 
 Скоуп `local`, з порожньої теки поза репозиторієм (як у Task C):
 
-bash
+```bash
 claude mcp add leaddesk -- node "<шлях до репозиторію>/mcp/leaddesk-server/src/server.mjs"
-
+```
 
 Видалити: `claude mcp remove leaddesk`.
